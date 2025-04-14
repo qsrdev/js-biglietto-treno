@@ -41,12 +41,10 @@ console.log("Prezzo del viaggio se hai meno di 18 anni è di" + " " + u18discoun
 const o65discountPrice = totalPrice - o65discount;
 console.log("Prezzo del viaggio se hai più di 65 anni è di" + " " + o65discountPrice);
 
-let messagge;
-
 if (userAge < 18) {
-  messagge = `Ha diritto allo sconto under 18 - totale costo del biglietto ${u18discountPrice.toFixed(2)} €`;
+  alert(`Ha diritto allo sconto under 18 - totale costo del biglietto ${u18discountPrice.toFixed(2)} €`);
 } else if (userAge >= 65) {
-  messagge = `Ha diritto allo sconto over 65 - totale costo del biglietto ${o65discountPrice.toFixed(2)} €`;
+  alert(`Ha diritto allo sconto over 65 - totale costo del biglietto ${o65discountPrice.toFixed(2)} €`);
 } else {
-  messagge = `Non ha diritto allo sconto - il prezzo è di ${totalPrice.toFixed(2)} €`;
+  alert(`Non ha diritto allo sconto - il prezzo è di ${totalPrice.toFixed(2)} €`);
 }
